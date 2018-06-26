@@ -22,8 +22,11 @@ const change2 = function(FormInput) {
  }
 
 
+const change3 = function(Input)  {
 
-
+   const q = document.querySelector("h3")
+   q.textContent = Input
+}
 
 
 
