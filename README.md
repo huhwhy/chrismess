@@ -19,3 +19,21 @@
 * Make sure it works when you press _enter_ on the keyboard, not jus when you click the button
 
 *commit each step, and then make a good descriptive commit message
+
+
+#Day 2 Homework
+
+* Give the function change heading a more accurate name
+* Add a second field to the form.
+* Display the value of that field in the list
+
+##Bonus Credit
+
+* Display the second field in a seperate HTML element than the flick name
+
+* See if you can then style it differently
+
+
+#Super Mega Credit
+
+* Use more then one function. ( "Break "changeHeading" into multiple functions, as appropriate)
