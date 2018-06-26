@@ -9,18 +9,20 @@
 </head>
 <body>
    <h1>Chrismess - A whole mess o' Chrisses</h1>
-   <h2 class="delight"> Life is awesome with code</h2>
-   <h3> Why the hell is javascript the only language allowed to be a browser language? Why not Python, or C?</h3>h
+   <h2 id="delight"> Life is awesome with code</h2>
+   <h3> Why the hell is javascript the only language allowed to be a browser language? Why not Python, or C?</h3>
 
-   <button>Change heading</button>
+   <button id="button1" onclick="change()">Change heading</button>
 
 
-   <form>
-      first name: <br>
-      <input type="text" name="firstname"><br>
-      last name:<br>
-      <input type="text" name="whatever">
-    
+   <form  onsubmit="return false">
+     
+      changeName <br>
+      <input type ="text" id="changeHead"
+      onkeydown="if(event.keyCode == 13){document.getElementById('buttons').click()}"><br>
+           
+      <input type="button" id="buttons" onclick="change2(document.getElementById('changeHead').value)" value="Submit"><br>
+
 
    </form>
 
