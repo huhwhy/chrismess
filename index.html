@@ -26,31 +26,30 @@
   <br>
   <br>
   <br>
-  <form  onsubmit="return false">
+  <form id="flickform" onsubmit="return false">
          
 
       Movies <br>
-      <input type ="text" id="changeHead"
-      onkeydown="if(event.keyCode == 13){document.getElementById('buttons').click()}"><br>
-           
-      <input type="button" id="buttons" onclick="change2(document.getElementById('changeHead').value)" value="Submit"><br>
+      <input type ="text" id="flickName"
+      name="flickName"
+      placeholder="Movies" >
+         
+       <br>
+       <br>
 
-  <br>
-
-   </form>
-
- 
-
-  <form onsubmit="return false">
 
        Actors <br>
-       <input type="text" id="changes"
+       <input type="text" id="changes" 
+       name="flickYear"
+       placeholder="Actors" 
        onkeydown="if(event.keyCode == 13){document.getElementById('buttons').click()}"><br>
 
-       <input type="button" id="buttons" onclick="change3(document.getElementById('changes').value)" value="Display" ><br>
+       <input type="submit" id="buttons" onclick="change3" value="Display" ><br>
 
 
   </form>
+
+  <ul id="flicks"></ul>
 
   <br>
 
