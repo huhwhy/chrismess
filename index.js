@@ -22,10 +22,9 @@ const change2 = function(FormInput) {
 
  }
 
-
 const change3 = function(event)  {
    
-   event.preventDefault()
+    event.preventDefault()
 
    const f = event.target // look up target ( maybe form?)
 
@@ -47,10 +46,56 @@ const change3 = function(event)  {
    list.appendChild(year) // appends year to list
    list.appendChild(br) // appends break object to list
  
+   
+   
+    const flicks = {           // make flicks an object ( dict ) containing the value of the movie name and movie year
+    name: f.flickName.value,
+    year : f.flickYear.value
+   // favorite = ''
+   } 
+
+   a = []
+
+   a.push(flicks)
+ //  
+   
+
+   console.log(a)
+
+
+
+
+//make a function to make a delete button
+// make a function to make functionality for delete button
    f.reset() // empties the boxes you hit reset on
+
+   buttonMaker()
 }
+
+buttonMaker = function() {
+
+	var btn = document.createElement("BUTTON");        // Create a <button> element
+    var t = document.createTextNode("Delete");       // Create a text node
+    btn.appendChild(t);                                // Append the text to <button>
+    document.body.appendChild(btn); // appends the btn too
+    buttonFunction() 
+
+}
+   
+
+
+
+buttonFunction = function () {
+    var elem = document.getElementById("buttons")
+    elem.parentNode.removeChild(elem)
+    return false
+}
+
+   
+
 
 
 
 
 form.addEventListener('submit', change3)
+

@@ -37,3 +37,24 @@
 #Super Mega Credit
 
 * Use more then one function. ( "Break "changeHeading" into multiple functions, as appropriate)
+
+
+
+#Day 3 Homework
+
+* In addition to building a list item and adding it to the DOM, also store each movie in a array
+(add each flick to a array, array of Flick objects)
+
+##Bonus Credit
+
+*Add a delete button to each list item that removes it from the list
+
+#Super Mega Bonus Credit
+
+*Remove the flick from the array as well
+
+#Super Mega Part II
+
+* Add a favorite button too that lets you mark your favorites
+*Display favorites differenty (css hint)
+*Be sure favorites are recorded appropriately in the array ( maybe bold it?) 
